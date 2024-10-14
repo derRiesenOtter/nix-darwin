@@ -50,19 +50,16 @@
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
 
-      # Dock Autohiding
-      system.defaults.dock.autohide = true;
-      
-      # Change default Finder Search to search the current window
-      system.defaults.finder.FXDefaultSearchScope = "SCcf";
+      system.defaults = {
+        dock.autohide = true;
+        finder = {
+          FXDefaultSearchScope = "SCcf";
+          FXPreferredViewStyle = "Nlsv";
+          ShowPathbar = true;
+        };
+        NSGlobalDomain.AppleWindowTabbingMode = "always";
+      };
 
-      # Change default Finder view to list
-      system.defaults.finder.FXPreferredViewStyle = "Nlsv";
-
-      # Show path bar in Finder
-      system.defaults.finder.ShowPathbar = true;
-
-      # fonts
       fonts.packages = [
         pkgs.meslo-lgs-nf
       ];
