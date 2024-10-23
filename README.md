@@ -1,10 +1,10 @@
-# Installation of nix darwin
+# Installation of home-manager
 
-1. Follow the official installation instruction for the nix package manager https://nixos.org/download/
+1. Follow the official installation instruction for the [nix package manager](https://nixos.org/download/)
 3. Log in to the Mac App Store
-3. Create a new [ssh-key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-4. Add the ssh-key to the [github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-5. Copy the configuration to .config
+3. [Create a new ssh-key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+4. [Add the ssh-key to the github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+5. Copy the configuration to the `~/.config` directory
 ```sh
 mkdir -p ~/.config
 cd ~/.config
