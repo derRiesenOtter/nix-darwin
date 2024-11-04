@@ -12,12 +12,12 @@ git clone git@github.com:derRiesenOtter/nix-darwin.git
 ```
 6. Initialize nix-darwin 
 ```sh 
-nix run nix-darwin -- --flake ~/.config/nix-darwin#MacBookPro
+nix run nix-darwin -- --flake ~/.config/nix-darwin
 ```
 
 # Updating of nix darwin
 ## Updating the configuration
 ```sh
-darwin-rebuild switch --flake ~/.config/nix-darwin#MacBookPro
+darwin-rebuild switch --flake ~/.config/nix-darwin
 ```
 

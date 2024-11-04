@@ -1,17 +1,21 @@
 { pkgs, ... }:
 
 {
-  system = {
-    stateVersion = 5;
+  system.stateVersion = 5;
 
+  system = {
     defaults = {
       dock.autohide = true;
       finder = {
         FXDefaultSearchScope = "SCcf";
-        FXPreferredViewStyle = "Nlsv";
+        FXPreferredViewStyle = "clmv";
         ShowPathbar = true;
       };
-      NSGlobalDomain.AppleWindowTabbingMode = "always";
+      NSGlobalDomain = {
+        AppleWindowTabbingMode = "always";
+        AppleInterfaceStyle = "Dark";
+        AppleInterfaceStyleSwitchesAutomatically = false;
+      };
     };
   };
 
@@ -20,7 +24,5 @@
   ];
 
   security.pam.enableSudoTouchIdAuth = true;
-
-  programs.zsh.enable = true;
 
 }
