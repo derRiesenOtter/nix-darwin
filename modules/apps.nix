@@ -32,6 +32,8 @@
       "brave-browser"
       "obsidian"
       "logseq"
+      "virtualbox"
+      "whatsapp"
     ];
     masApps = {
       "Final Cut Pro" = 424389933;
