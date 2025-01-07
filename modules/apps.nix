@@ -19,11 +19,14 @@
       "homebrew/services"
     ];
 
-    brews =
-      [
-      ];
+    brews = [
+      "tbb"
+      "cmake"
+    ];
 
     casks = [
+      "steam"
+      "firefox"
       "wezterm"
       "clipgrab"
       "syntax-highlight"
@@ -34,6 +37,7 @@
       "logseq"
     ];
     masApps = {
+      "Amphetamine" = 937984704;
       "Final Cut Pro" = 424389933;
       "Logic Pro" = 634148309;
       "Affinity Photo" = 824183456;
